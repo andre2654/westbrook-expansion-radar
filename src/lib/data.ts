@@ -1,4 +1,5 @@
 import fs from "fs";
+import os from "os";
 import path from "path";
 import type {
   Account,
@@ -37,12 +38,23 @@ export function loadFeedback(): FeedbackEvent[] {
   return read<{ events: FeedbackEvent[] }>("feedback.json").events;
 }
 
+// On a local run we persist to data/feedback.json; on a read-only serverless
+// host (Vercel) the data dir isn't writable, so we fall back to /tmp (ephemeral
+// per instance — fine for a hosted demo). Never throws.
+const TMP_FEEDBACK = path.join(os.tmpdir(), "westbrook-feedback.json");
+
 export function appendFeedback(ev: FeedbackEvent): void {
-  const file = path.join(DATA_DIR, "feedback.json");
-  const doc = JSON.parse(fs.readFileSync(file, "utf8")) as {
+  const primary = path.join(DATA_DIR, "feedback.json");
+  const src = fs.existsSync(TMP_FEEDBACK) ? TMP_FEEDBACK : primary;
+  const doc = JSON.parse(fs.readFileSync(src, "utf8")) as {
     _comment?: string;
     events: FeedbackEvent[];
   };
   doc.events.push(ev);
-  fs.writeFileSync(file, JSON.stringify(doc, null, 2));
+  const out = JSON.stringify(doc, null, 2);
+  try {
+    fs.writeFileSync(primary, out);
+  } catch {
+    fs.writeFileSync(TMP_FEEDBACK, out);
+  }
 }
