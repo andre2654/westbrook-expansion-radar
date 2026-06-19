@@ -1,0 +1,113 @@
+{
+  "_comment": "EXTERNAL leg. In production this is a LICENSED postings/labor-market API (employer-direct provenance) + public WARN + announced-DC feeds — never scraping. For the demo the HERO posting points at a REAL employer careers site (verify + snapshot a live req before submitting — see README).",
+  "run_week": "2026-06-19",
+  "signals": [
+    {
+      "signal_id": "sig_gxo_phx_fork",
+      "type": "job_posting",
+      "employer_name_raw": "GXO Logistics, Inc.",
+      "title_raw": "Forklift Operator",
+      "location_raw": "Phoenix, AZ",
+      "open_reqs": 15,
+      "provenance": "employer_direct",
+      "url": "https://careers.gxo.com/jobs?keyword=forklift&location=Phoenix",
+      "url_status": "unverified_stub",
+      "url_note": "REAL employer careers site. Before submitting, paste a specific live Phoenix warehouse/forklift req URL you verified today and snapshot it (README step 4).",
+      "posted_date": "2026-06-16",
+      "is_repost": false,
+      "first_seen_week": "2026-06-19"
+    },
+    {
+      "signal_id": "sig_gxo_phx_dc",
+      "type": "dc_opening",
+      "employer_name_raw": "GXO LOG",
+      "title_raw": "New Distribution Center",
+      "location_raw": "Phenix, AZ",
+      "open_reqs": 0,
+      "provenance": "employer_direct",
+      "url": "https://example.com/news/gxo-phoenix-dc-announcement",
+      "url_status": "stub",
+      "posted_date": "2026-06-10",
+      "is_repost": false,
+      "first_seen_week": "2026-06-19"
+    },
+    {
+      "signal_id": "sig_gxo_dal_dup",
+      "type": "job_posting",
+      "employer_name_raw": "GXO Logistics",
+      "title_raw": "Warehouse Associate",
+      "location_raw": "Dallas, TX",
+      "open_reqs": 6,
+      "provenance": "employer_direct",
+      "url": "https://careers.gxo.com/jobs?keyword=warehouse&location=Dallas",
+      "posted_date": "2026-06-14",
+      "is_repost": false,
+      "first_seen_week": "2026-06-19"
+    },
+    {
+      "signal_id": "sig_gxo_phx_ghost",
+      "type": "job_posting",
+      "employer_name_raw": "GXO Logistics, Inc.",
+      "title_raw": "Reach Truck Operator",
+      "location_raw": "Phoenix, AZ",
+      "open_reqs": 4,
+      "provenance": "employer_direct",
+      "url": "https://careers.gxo.com/jobs/old-req-reach-truck",
+      "posted_date": "2026-03-29",
+      "is_repost": true,
+      "first_seen_week": "2026-04-06"
+    },
+    {
+      "signal_id": "sig_globex_it",
+      "type": "job_posting",
+      "employer_name_raw": "Globex Mfg",
+      "title_raw": "IT Help Desk Technician",
+      "location_raw": "Newark, NJ",
+      "open_reqs": 5,
+      "provenance": "employer_direct",
+      "url": "https://example.com/globex/it-helpdesk",
+      "posted_date": "2026-06-15",
+      "is_repost": false,
+      "first_seen_week": "2026-06-19"
+    },
+    {
+      "signal_id": "sig_initech_dal",
+      "type": "job_posting",
+      "employer_name_raw": "Initech Inc",
+      "title_raw": "Data Entry Clerk",
+      "location_raw": "Dallas, TX",
+      "open_reqs": 3,
+      "provenance": "employer_direct",
+      "url": "https://example.com/initech/data-entry-dallas",
+      "posted_date": "2026-06-13",
+      "is_repost": false,
+      "first_seen_week": "2026-06-19"
+    },
+    {
+      "signal_id": "sig_umbrella_cambridge",
+      "type": "job_posting",
+      "employer_name_raw": "Umbrella BioLabs LLC",
+      "title_raw": "Laboratory Technician",
+      "location_raw": "Raleigh, NC",
+      "open_reqs": 9,
+      "provenance": "employer_direct",
+      "url": "https://example.com/umbrella/lab-tech-cambridge",
+      "posted_date": "2026-06-12",
+      "is_repost": false,
+      "first_seen_week": "2026-06-19"
+    },
+    {
+      "signal_id": "sig_macro_warehouse",
+      "type": "news_macro",
+      "employer_name_raw": "",
+      "title_raw": "U.S. warehouse hiring surges in Q2 amid e-commerce push",
+      "location_raw": "United States",
+      "open_reqs": 0,
+      "provenance": "news",
+      "url": "https://example.com/news/warehouse-hiring-surge",
+      "posted_date": "2026-06-17",
+      "is_repost": false,
+      "first_seen_week": "2026-06-19"
+    }
+  ]
+}

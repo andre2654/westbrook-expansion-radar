@@ -1,0 +1,4 @@
+{
+  "_comment": "The trust signal — the whole point of v0. Every AM disposition (pursue / already-on-it / not-now / not-a-fit + reason) and outcome (won + actual GM) is appended here. This is the data that, weeks in, tells us whether AMs trust the radar and whether it moved net-new gross margin.",
+  "events": []
+}

@@ -1,0 +1,27 @@
+{
+  "_comment": "Lighter-heuristic rows. v0 builds ONE archetype for real (same-role geographic whitespace). The other two archetypes (adjacent-role, re-staff window) ship as STATIC 'also surfaced' rows with no bespoke detection logic yet — honest about what is and isn't built.",
+  "rows": [
+    {
+      "id": "also_stark_restaff",
+      "account_id": "acc_stark",
+      "archetype": "restaff_window",
+      "confidence": "high",
+      "headline": "Stark Retail — re-staff window: 9 merchandiser assignments ending within 30 days (Chicago)",
+      "rationale": "Internal end-date scan only (no external join). A clustered set of assignments lapses by 2026-07-10; high win-rate to extend or re-staff before they roll off.",
+      "gm_band": { "conservative": 30000, "expected": 38000, "stretch": 45000, "basis": "realized $9/hr spread, 95% fill, seasonal ~600h assignments" },
+      "caveat": "Time-sensitive — act before the end-dates.",
+      "evidence_note": "Lighter heuristic — internal end-date scan, no external signal required."
+    },
+    {
+      "id": "also_northwind_allied",
+      "account_id": "acc_northwind",
+      "archetype": "adjacent_role",
+      "confidence": "medium",
+      "headline": "Northwind Health — adjacent role-family (allied health) in Columbus",
+      "rationale": "We fill RN roles here; client is posting allied-health (Med Tech) roles we don't staff for them. Capability is proven on other healthcare accounts.",
+      "gm_band": { "conservative": 18000, "expected": 31000, "stretch": 52000, "basis": "directional — allied-desk realized spread ($14), other-client allied fill (40%)" },
+      "caveat": "Verify VMS scope before pursuit (notes flag a VMS in place). Marco is a skeptic AM — bring the evidence.",
+      "evidence_note": "Lighter heuristic — adjacent-role detection not built in v0; surfaced for AM judgment, not auto-scored."
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "run_week": "2026-06-19",
+  "generated_at": "2026-06-19T16:07:13.602Z",
+  "plays": [
+    {
+      "id": "play_sig_gxo_phx_fork",
+      "account_id": "acc_gxo",
+      "account_name": "GXO Logistics",
+      "am": "Dana Reyes",
+      "am_is_skeptic": false,
+      "archetype": "geographic_whitespace",
+      "headline": "GXO Logistics — Warehouse / light-industrial whitespace in Phoenix, AZ",
+      "role_label": "Warehouse / light-industrial",
+      "role_canonical": "warehouse_ops",
+      "metro_label": "Phoenix, AZ",
+      "metro_canonical": "phoenix",
+      "metro_is_new": true,
+      "open_reqs": 15,
+      "match_confidence": 0.98,
+      "coverage_confidence": 0.9,
+      "gm": {
+        "conservative_heads": 5,
+        "expected_heads": 8,
+        "stretch_heads": 11,
+        "conservative": 47340,
+        "expected": 75744,
+        "stretch": 104148,
+        "annualized_run_rate": 149760,
+        "inputs": {
+          "open_reqs": 15,
+          "realized_spread": 9,
+          "realized_fill": 0.91,
+          "realized_hours": 1052,
+          "cold_geo_haircut": 0.6,
+          "anchor_placement_ids": [
+            "pl_gxo_1",
+            "pl_gxo_2",
+            "pl_gxo_3"
+          ]
+        },
+        "math_note": "15 open reqs × 91% our realized fill × 0.6 cold-geo haircut ≈ 8 winnable heads × $9.00/hr spread × 1052h/assignment."
+      },
+      "rank": {
+        "conservative_gm": 47340,
+        "match_confidence": 0.98,
+        "coverage_confidence": 0.9,
+        "freshness": 0.99,
+        "corroboration": 1.15,
+        "urgency_boost": 0,
+        "score": 47.38
+      },
+      "evidence": [
+        {
+          "kind": "external",
+          "label": "15 Warehouse / light-industrial reqs in Phoenix, AZ",
+          "detail": "employer-direct, posted 2026-06-16",
+          "url": "https://careers.gxo.com/jobs?keyword=forklift&location=Phoenix",
+          "url_status": "unverified_stub",
+          "source_id": "sig_gxo_phx_fork"
+        },
+        {
+          "kind": "external",
+          "label": "Catalyst: new DC announced in Phoenix, AZ",
+          "detail": "Corroborating signal, 2026-06-10",
+          "url": "https://example.com/news/gxo-phoenix-dc-announcement",
+          "url_status": "stub",
+          "source_id": "sig_gxo_phx_dc"
+        },
+        {
+          "kind": "internal",
+          "label": "5× Warehouse / light-industrial in Dallas, TX",
+          "detail": "93% fill · $9.10/hr realized spread · ~1080h/assignment",
+          "source_id": "pl_gxo_1"
+        },
+        {
+          "kind": "internal",
+          "label": "4× Warehouse / light-industrial in Dallas, TX",
+          "detail": "90% fill · $8.90/hr realized spread · ~1040h/assignment",
+          "source_id": "pl_gxo_2"
+        },
+        {
+          "kind": "internal",
+          "label": "3× Warehouse / light-industrial in Grand Prairie, TX",
+          "detail": "89% fill · $8.95/hr realized spread · ~1020h/assignment",
+          "source_id": "pl_gxo_3"
+        }
+      ],
+      "suggested_move": "Warm intro from Dana Reyes (Dallas, TX) to the Phoenix, AZ ops contact; lead with our existing track record, confirm the roles are open to us, then scope a first crew.",
+      "draft_opener": "Hi [name], I hope this message finds you well. I saw the exciting news about GXO's new distribution center in Phoenix and wanted to reach out, given our strong partnership in Dallas where we're currently supporting 12 warehouse roles at a 91% fill rate. I'm wondering if you'd be interested in discussing how we might help staff the 15 open warehouse positions for this new location. Would you have some time to connect this week?",
+      "opener_source": "llm",
+      "is_new_this_week": true
+    },
+    {
+      "id": "play_sig_initech_dal",
+      "account_id": "acc_initech",
+      "account_name": "Initech",
+      "am": "Sam Okafor",
+      "am_is_skeptic": false,
+      "archetype": "geographic_whitespace",
+      "headline": "Initech — Clerical / data entry whitespace in Dallas, TX",
+      "role_label": "Clerical / data entry",
+      "role_canonical": "clerical",
+      "metro_label": "Dallas, TX",
+      "metro_canonical": "dallas",
+      "metro_is_new": true,
+      "open_reqs": 3,
+      "match_confidence": 0.98,
+      "coverage_confidence": 0.9,
+      "gm": {
+        "conservative_heads": 1,
+        "expected_heads": 1,
+        "stretch_heads": 1,
+        "conservative": 7200,
+        "expected": 7200,
+        "stretch": 7200,
+        "annualized_run_rate": 16640,
+        "inputs": {
+          "open_reqs": 3,
+          "realized_spread": 8,
+          "realized_fill": 0.6,
+          "realized_hours": 900,
+          "cold_geo_haircut": 0.6,
+          "anchor_placement_ids": [
+            "pl_in_1"
+          ]
+        },
+        "math_note": "3 open reqs × 60% our realized fill × 0.6 cold-geo haircut ≈ 1 winnable heads × $8.00/hr spread × 900h/assignment."
+      },
+      "rank": {
+        "conservative_gm": 7200,
+        "match_confidence": 0.98,
+        "coverage_confidence": 0.9,
+        "freshness": 0.97,
+        "corroboration": 1,
+        "urgency_boost": 0,
+        "score": 6.18
+      },
+      "evidence": [
+        {
+          "kind": "external",
+          "label": "3 Clerical / data entry reqs in Dallas, TX",
+          "detail": "employer-direct, posted 2026-06-13",
+          "url": "https://example.com/initech/data-entry-dallas",
+          "source_id": "sig_initech_dal"
+        },
+        {
+          "kind": "internal",
+          "label": "2× Clerical / data entry in Austin, TX",
+          "detail": "60% fill · $8.00/hr realized spread · ~900h/assignment",
+          "source_id": "pl_in_1"
+        }
+      ],
+      "suggested_move": "Warm intro from Sam Okafor (Austin, TX) to the Dallas, TX ops contact; lead with our existing track record, confirm the roles are open to us, then scope a first crew.",
+      "draft_opener": "Hi [name],\n\nI hope this message finds you well. I wanted to touch base about the exciting growth I see happening at Initech, particularly with your new hiring needs in Dallas. While we've been supporting your team in Austin with two clerical/data entry roles, I'm eager to explore how we might help expand our partnership to your Dallas market with the three open positions you currently have. Would you be open to a quick call to discuss how we can support your talent acquisition strategy?",
+      "opener_source": "llm",
+      "is_new_this_week": true
+    }
+  ],
+  "also_surfaced": [
+    {
+      "id": "also_stark_restaff",
+      "account_id": "acc_stark",
+      "archetype": "restaff_window",
+      "confidence": "high",
+      "headline": "Stark Retail — re-staff window: 9 merchandiser assignments ending within 30 days (Chicago)",
+      "rationale": "Internal end-date scan only (no external join). A clustered set of assignments lapses by 2026-07-10; high win-rate to extend or re-staff before they roll off.",
+      "gm_band": {
+        "conservative": 30000,
+        "expected": 38000,
+        "stretch": 45000,
+        "basis": "realized $9/hr spread, 95% fill, seasonal ~600h assignments"
+      },
+      "caveat": "Time-sensitive — act before the end-dates.",
+      "evidence_note": "Lighter heuristic — internal end-date scan, no external signal required.",
+      "account_name": "Stark Retail",
+      "am": "Dana Reyes"
+    },
+    {
+      "id": "also_northwind_allied",
+      "account_id": "acc_northwind",
+      "archetype": "adjacent_role",
+      "confidence": "medium",
+      "headline": "Northwind Health — adjacent role-family (allied health) in Columbus",
+      "rationale": "We fill RN roles here; client is posting allied-health (Med Tech) roles we don't staff for them. Capability is proven on other healthcare accounts.",
+      "gm_band": {
+        "conservative": 18000,
+        "expected": 31000,
+        "stretch": 52000,
+        "basis": "directional — allied-desk realized spread ($14), other-client allied fill (40%)"
+      },
+      "caveat": "Verify VMS scope before pursuit (notes flag a VMS in place). Marco is a skeptic AM — bring the evidence.",
+      "evidence_note": "Lighter heuristic — adjacent-role detection not built in v0; surfaced for AM judgment, not auto-scored.",
+      "account_name": "Northwind Health",
+      "am": "Marco Diaz"
+    }
+  ],
+  "held": [
+    {
+      "signal_id": "sig_globex_it",
+      "account_id": "acc_globex",
+      "account_name": "Globex Manufacturing",
+      "am": "Priya Shah",
+      "role_label": "IT",
+      "metro_label": "Newark, NJ",
+      "reason": "Possible conflict from account notes — client may handle this function internally. Notes: \"Light-industrial assembly in Newark. NOTE: client handles all IT and engineering hiring internally — do not pitch IT staffing.\" — confirm with AM before pursuing.",
+      "kind": "note_surfaced",
+      "needs_confirm": true
+    },
+    {
+      "signal_id": "sig_umbrella_cambridge",
+      "account_id": "acc_umbrella",
+      "account_name": "Umbrella BioLabs",
+      "am": "Marco Diaz",
+      "role_label": "Laboratory",
+      "metro_label": "Raleigh, NC",
+      "reason": "AM-flagged \"at_risk\" by Marco Diaz: Renewal at risk; exec escalation open since May. Do not surface expansion until resolved.",
+      "kind": "am_owned_hard",
+      "needs_confirm": false
+    }
+  ],
+  "dropped": [
+    {
+      "signal_id": "sig_gxo_dal_dup",
+      "account_id": "acc_gxo",
+      "account_name": "GXO Logistics",
+      "reason": "Already served",
+      "detail": "We already staff Warehouse / light-industrial for this client in Dallas, TX."
+    },
+    {
+      "signal_id": "sig_gxo_phx_ghost",
+      "account_id": "acc_gxo",
+      "account_name": "GXO Logistics",
+      "reason": "Failed freshness",
+      "detail": "Flagged as a repost/ghost req (posted 82d ago) — likely already filled or evergreen."
+    },
+    {
+      "signal_id": "sig_macro_warehouse",
+      "account_id": null,
+      "account_name": "—",
+      "reason": "Not client-specific",
+      "detail": "Macro/news signal (\"U.S. warehouse hiring surges in Q2 amid e-commerce push\") with no employer to attach to."
+    }
+  ],
+  "meta": {
+    "accounts_scanned": 6,
+    "signals_scanned": 8,
+    "resolution_rate": 0.966,
+    "needs_verification": 1,
+    "needs_verification_examples": [
+      "GXO Logistics: location \"Grand Prairie, TX\""
+    ],
+    "total_conservative_gm": 54540,
+    "total_expected_gm": 82944,
+    "opener_source": "llm"
+  }
+}

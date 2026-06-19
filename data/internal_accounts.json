@@ -1,0 +1,74 @@
+{
+  "_comment": "INTERNAL leg = realistic stand-in for Westbrook's ATS/CRM export until we get the real one. Messiness is intentional and lives on the dimensions that break the join: legal-name variants, free-text geo, role drift, blank end-dates.",
+  "as_of_week": "2026-06-15",
+  "accounts": [
+    {
+      "account_id": "acc_gxo",
+      "display_name": "GXO Logistics",
+      "client_names_raw": ["GXO Logistics", "GXO Logistics, Inc.", "GXO LOG", "gxo logistics inc"],
+      "am": "Dana Reyes",
+      "am_is_skeptic": false,
+      "notes": "Anchored in the Dallas DC since 2023. Strong relationship with site ops. Open to multi-site conversations.",
+      "placements": [
+        { "placement_id": "pl_gxo_1", "title_raw": "Warehouse Assoc", "location_raw": "Dallas, TX", "headcount": 5, "bill_rate": 22.10, "pay_rate": 13.00, "fill_rate": 0.93, "avg_assignment_hours": 1080, "status": "active", "end_date": "2026-09-30" },
+        { "placement_id": "pl_gxo_2", "title_raw": "warehouse associate II", "location_raw": "dallas", "headcount": 4, "bill_rate": 22.00, "pay_rate": 13.10, "fill_rate": 0.90, "avg_assignment_hours": 1040, "status": "active", "end_date": "" },
+        { "placement_id": "pl_gxo_3", "title_raw": "Picker/Packer", "location_raw": "Grand Prairie, TX", "headcount": 3, "bill_rate": 21.90, "pay_rate": 12.95, "fill_rate": 0.89, "avg_assignment_hours": 1020, "status": "active", "end_date": "2026-08-20" }
+      ]
+    },
+    {
+      "account_id": "acc_northwind",
+      "display_name": "Northwind Health",
+      "client_names_raw": ["Northwind Health", "Northwind Health System"],
+      "am": "Marco Diaz",
+      "am_is_skeptic": true,
+      "notes": "RN staffing in Columbus. VMS in place — confirm scope before pitching adjacent roles.",
+      "placements": [
+        { "placement_id": "pl_nw_1", "title_raw": "Registered Nurse", "location_raw": "Columbus, OH", "headcount": 8, "bill_rate": 78.00, "pay_rate": 60.00, "fill_rate": 0.70, "avg_assignment_hours": 1560, "status": "active", "end_date": "2026-12-01" }
+      ]
+    },
+    {
+      "account_id": "acc_globex",
+      "display_name": "Globex Manufacturing",
+      "client_names_raw": ["Globex Manufacturing", "Globex Mfg", "Globex Manufacturing Co"],
+      "am": "Priya Shah",
+      "am_is_skeptic": false,
+      "notes": "Light-industrial assembly in Newark. NOTE: client handles all IT and engineering hiring internally — do not pitch IT staffing.",
+      "placements": [
+        { "placement_id": "pl_gx_1", "title_raw": "Assembler", "location_raw": "Newark, NJ", "headcount": 10, "bill_rate": 26.00, "pay_rate": 16.00, "fill_rate": 0.85, "avg_assignment_hours": 1200, "status": "active", "end_date": "2026-10-15" }
+      ]
+    },
+    {
+      "account_id": "acc_initech",
+      "display_name": "Initech",
+      "client_names_raw": ["Initech", "Initech Inc"],
+      "am": "Sam Okafor",
+      "am_is_skeptic": false,
+      "notes": "Small but steady contract clerical account in Austin.",
+      "placements": [
+        { "placement_id": "pl_in_1", "title_raw": "Data Entry Clerk", "location_raw": "Austin, TX", "headcount": 2, "bill_rate": 30.00, "pay_rate": 22.00, "fill_rate": 0.60, "avg_assignment_hours": 900, "status": "active", "end_date": "2026-08-31" }
+      ]
+    },
+    {
+      "account_id": "acc_stark",
+      "display_name": "Stark Retail",
+      "client_names_raw": ["Stark Retail", "Stark Retail Group"],
+      "am": "Dana Reyes",
+      "am_is_skeptic": false,
+      "notes": "Seasonal merchandising. Several assignments ending in the next 30 days — re-staff window.",
+      "placements": [
+        { "placement_id": "pl_st_1", "title_raw": "Merchandiser", "location_raw": "Chicago, IL", "headcount": 9, "bill_rate": 24.00, "pay_rate": 15.00, "fill_rate": 0.95, "avg_assignment_hours": 600, "status": "active", "end_date": "2026-07-10" }
+      ]
+    },
+    {
+      "account_id": "acc_umbrella",
+      "display_name": "Umbrella BioLabs",
+      "client_names_raw": ["Umbrella BioLabs", "Umbrella Bio", "Umbrella BioLabs LLC"],
+      "am": "Marco Diaz",
+      "am_is_skeptic": false,
+      "notes": "Lab-tech staffing in Boston. Strong growth signals lately.",
+      "placements": [
+        { "placement_id": "pl_um_1", "title_raw": "Lab Technician", "location_raw": "Boston, MA", "headcount": 6, "bill_rate": 40.00, "pay_rate": 28.00, "fill_rate": 0.75, "avg_assignment_hours": 1400, "status": "active", "end_date": "2026-11-20" }
+      ]
+    }
+  ]
+}

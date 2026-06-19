@@ -1,0 +1,12 @@
+{
+  "_comment": "AM-OWNED landmine list. Ships MOSTLY EMPTY on purpose — the AM pre-loads what only they know. The system NEVER auto-detects at-risk/MSP status from data; it only honors this list (hard suppression) and, separately, surfaces *candidate* conflicts from free-text notes for the AM to confirm.",
+  "flags": [
+    {
+      "account_id": "acc_umbrella",
+      "flag": "at_risk",
+      "owner": "Marco Diaz",
+      "note": "Renewal at risk; exec escalation open since May. Do not surface expansion until resolved.",
+      "added_week": "2026-05-25"
+    }
+  ]
+}
